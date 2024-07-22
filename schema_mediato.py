@@ -60,8 +60,8 @@ mediated_schema = {}
 
 for file1, file2, matches in all_matches:
     for (col1, col2), score in matches.items():
-        source_col = col1[1]  # col1 e col2 sono tuple del tipo ('table_name', 'column_name')
-        mediated_schema[source_col] = 'string'  # Puoi migliorare il tipo di dato se necessario
+        source_col = col1[1]  
+        mediated_schema[source_col] = 'string'  
 
 # Aggiunta di eventuali campi non matchati
 for df in dataframes.values():
